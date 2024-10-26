@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaSuper - Comparador de Preços</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-gray-900">
+
+    <!-- Navegação Breadcrumbs -->
+    <nav class="bg-gray-800 w-full py-4 px-6 shadow-lg text-white fixed top-0 z-10">
+        <div class="container mx-auto flex items-center justify-center md:justify-start space-x-4 text-sm md:text-base">
+            <!-- Link para o topo -->
+            <a id="scrollToTop" class="flex items-center space-x-2 hover:text-green-400 transition duration-200">
+                <img src="assets/img/icon-128x128-nbg.png" alt="Logo do BuscaSuper" class="w-8 h-8">
+                <span class="font-poppins text-lg md:text-xl font-semibold tracking-wide">Busca Super</span>
+            </a>
+            <!-- Links de Navegação -->
+            <div class="flex items-center space-x-2 md:space-x-4 ml-4 md:ml-8">
+                <a href="#video" class="hover:text-green-400 transition duration-200">Vídeo</a>
+                <span>/</span>
+                <a href="#images" class="hover:text-green-400 transition duration-200">Imagens</a>
+                <span>/</span>
+                <a href="#download" class="hover:text-green-400 transition duration-200">Download</a>
+                <span>/</span>
+                <a href="#installation" class="hover:text-green-400 transition duration-200">Instalação</a>
+                <span>/</span>
+                <a href="#contact" class="hover:text-green-400 transition duration-200">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Conteúdo Principal -->
+    <main class="mt-20 md:mt-24 bg-gray-100 w-full md:w-[1024px] mx-auto p-4 md:p-8 shadow-lg">
+
+        <!-- Seção de Vídeo -->
+        <section id="video" class="mb-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">Veja Como Funciona</h2>
+            <div class="video-container flex justify-center mb-6">
+                <iframe class="w-full max-w-3xl h-64 md:h-80 lg:h-96 rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="YouTube video player" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Seção de Imagens -->
+        <section id="images" class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-6">Imagens do Aplicativo</h2>
+            <div class="carousel-container overflow-hidden mx-auto" style="max-width: 782px;">
+                <div id="carousel" class="flex transition-transform duration-500 space-x-4">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/screenshot1.png"
+                        alt="Imagem 1 do Aplicativo">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/screenshot2.png"
+                        alt="Imagem 2 do Aplicativo">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/screenshot3.png"
+                        alt="Imagem 3 do Aplicativo">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/screenshot4.png"
+                        alt="Imagem 4 do Aplicativo">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/screenshot5.png"
+                        alt="Imagem 5 do Aplicativo">
+                </div>
+            </div>
+
+            <!-- Botões de Navegação do Carrossel -->
+            <div class="flex justify-center space-x-4 mt-4">
+                <button id="prevBtn" class="bg-gray-800 text-white p-2 rounded">Anterior</button>
+                <button id="nextBtn" class="bg-gray-800 text-white p-2 rounded">Próximo</button>
+            </div>
+        </section>
+
+        <!-- Seção de Download -->
+        <section id="download" class="download-section bg-white p-6 md:p-10 rounded-lg shadow-lg mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-4">Baixe o App</h2>
+            <p class="text-center mb-6 text-sm md:text-base">Obtenha o BuscaSuper e aproveite para encontrar as melhores
+                ofertas na sua região.</p>
+            <div class="flex justify-center">
+                <a href="LINK_PARA_DOWNLOAD" target="_blank"
+                    class="flex items-center space-x-2 bg-green-600 text-white font-semibold py-3 px-6 rounded hover:bg-green-700 transition duration-200">
+                    <img alt="imagem PNG de pt.pngtree.com" src="assets/img/play-store-icon.png"
+                        alt="Ícone da Play Store" class="w-6 h-6">
+                    <span>Download apk</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Instalação com Carrossel -->
+        <section id="installation" class="installation-section bg-white p-6 md:p-10 rounded-lg shadow-lg mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-4">Instalação</h2>
+            <p class="text-center mb-6 text-sm md:text-base">Siga as etapas para instalar e começar a usar o BuscaSuper
+                em poucos minutos.</p>
+
+            <!-- Carrossel de Instalação -->
+            <div class="carousel-container overflow-hidden mx-auto" style="max-width: 782px;">
+                <div id="installationCarousel" class="flex transition-transform duration-500 space-x-4">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/installation-step1.png"
+                        alt="Passo 1 da Instalação">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/installation-step2.png"
+                        alt="Passo 2 da Instalação">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/installation-step3.png"
+                        alt="Passo 3 da Instalação">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/installation-step4.png"
+                        alt="Passo 4 da Instalação">
+                    <img class="gallery-image rounded-lg shadow-lg" src="assets/img/installation-step5.png"
+                        alt="Passo 5 da Instalação">
+                </div>
+            </div>
+
+            <!-- Botões de Navegação do Carrossel -->
+            <div class="flex justify-center space-x-4 mt-4">
+                <button id="prevInstallationBtn" class="bg-gray-800 text-white p-2 rounded">Anterior</button>
+                <button id="nextInstallationBtn" class="bg-gray-800 text-white p-2 rounded">Próximo</button>
+            </div>
+        </section>
+
+
+        <!-- Seção de Contato -->
+        <section id="contact" class="contact-form-section bg-white p-4 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-semibold text-center mb-4">Entre em Contato</h2>
+            <p class="text-center mb-6 text-sm md:text-base">Tem interesse em trazer o BuscaSuper para sua região? Envie
+                sua mensagem!</p>
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-700">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500">
+                </div>
+                <!-- Novo campo de seleção de Assunto -->
+                <div>
+                    <label for="subject" class="block text-gray-700">Assunto</label>
+                    <select id="subject" name="subject" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500">
+                        <option value="">Selecione um assunto</option>
+                        <option value="Sugestões">😊 Sugestões</option>
+                        <option value="Adicionar sua cidade" selected>🏙️ Adicionar sua cidade</option>
+                    </select>
+                </div>
+
+                <!-- Inputs de URL adicionais (ocultos por padrão) -->
+                <div id="urlInputs" class="hidden space-y-4 mt-4">
+                    <!-- Campo para o nome da cidade -->
+                    <div>
+                        <label for="cityName" class="block text-gray-700">Nome da Cidade</label>
+                        <input type="text" id="cityName" name="cityName" placeholder="Digite o nome da cidade"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500">
+                    </div>
+                    <!-- Campo para o estado, preenchido automaticamente -->
+                    <div>
+                        <label for="stateName" class="block text-gray-700">Estado</label>
+                        <input type="text" id="stateName" name="stateName" placeholder="Estado"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500"
+                            disabled>
+                    </div>
+                    <!-- Campos para as URLs das páginas de sugestão -->
+                    <div>
+                        <label for="cityUrl1" class="block text-gray-700">Página de Sugestão 1</label>
+                        <input type="url" id="cityUrl1" name="cityUrl1" value="https://"
+                            placeholder="https://exemplo.com/sugestao1"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500">
+                    </div>
+                    <div>
+                        <label for="cityUrl2" class="block text-gray-700">Página de Sugestão 2</label>
+                        <input type="url" id="cityUrl2" name="cityUrl2" value="https://"
+                            placeholder="https://exemplo.com/sugestao2"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-gray-700">Mensagem</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Sua mensagem" required
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-green-500"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-green-600 text-white font-semibold py-3 rounded hover:bg-green-700 transition duration-200">Enviar
+                    Mensagem</button>
+            </form>
+        </section>
+
+
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 w-full md:w-[1024px] mx-auto py-4 text-center mt-12">
+        <p class="text-gray-400 text-sm md:text-base">&copy; 2024 BuscaSuper. Todos os direitos reservados.</p>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
+
+    <!-- Script para o carrossel -->
+    <script src="assets/js/carousel.js"></script>
+    <!-- Script para scroll to top -->
+    <script src="assets/js/scrollToTop.js"></script>
+    <!-- Script para captura de dados de e-mail -->
+    <script src="assets/js/formHandler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonte personalizada */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ajustes adicionais para o breadcrumb */
+nav a {
+    text-decoration: none;
+    padding: 4px 8px;
+}
+
+nav a:hover {
+    background-color: rgba(72, 187, 120, 0.2);
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+
+/* Definição para as imagens do carrossel */
+.gallery-image {
+    max-width: 250px; /* Limite de largura em telas grandes */
+    width: 100%;      /* Ajuste dinâmico ao contêiner em telas menores */
+    height: auto;     /* Mantém a proporção */
+    flex-shrink: 0;   /* Garante que as imagens não encolham */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos personalizados */
+.container {
+    @apply w-full md:w-4/5 mx-auto overflow-hidden;
+}
+
+.header {
+    @apply bg-green-600 text-white py-8 text-center;
+}
+
+.logo {
+    @apply w-12 mb-4;
+}
+
+h1 {
+    @apply my-5 text-2xl md:text-3xl;
+}
+
+.video-section, .gallery, .contact-form-section {
+    @apply py-8;
+}
+
+.video-container {
+    @apply flex justify-center mb-5;
+}
+
+.contact-form-section form {
+    @apply flex flex-col;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    @apply mb-4 p-3 rounded border border-gray-300;
+}
+
+.contact-form-section button {
+    @apply p-3 bg-green-600 text-white text-lg rounded cursor-pointer;
+}
+
+.contact-form-section button:hover {
+    @apply bg-green-700;
+}
+
+.footer {
+    @apply bg-gray-800 text-white text-center py-4 mt-5;
+}
